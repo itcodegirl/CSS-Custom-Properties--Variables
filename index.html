@@ -13,52 +13,87 @@
 	<img src="images/portfilio_pic_26.webp" alt="itCodeGirl Logo" class="logo" />
 	<br />
 	<br />
-	<h1>Using CSS Custom Properties (Variables)</h1>
-	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-		quam,
-		feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-		ultricies
-		mi vitae est. Mauris placerat eleifend leo.</p>
+	<span id="title">CSS Custom Properties</span>
+	<p>CSS custom properties, also known as CSS variables, allow you to define reusable values in your stylesheet,
+		making your
+		CSS easier to maintain, especially when using the same values (such as colors, font sizes, or margins) in
+		multiple
+		places. CSS variables are particularly useful for theming, ensuring consistency, and simplifying updates.</p>
+
+	<h1>Key Features:</h1>
 	<ul>
-		<li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.
-			Sed
-			arcu. Cras consequat.</li>
-		<li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
-			Aliquam
-			erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
-		<li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique
-			cursus.
-			Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
-		<li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.
+		<li>Declaration: Custom properties are defined using the -- prefix. Typically, they are declared inside the
+			:root
+			pseudo-class to make them globally accessible throughout the stylesheet.</li>
+		<li>Usage: You can reference the custom property using the var() function wherever it is needed.</li>
+		<li>
+			Scoping: Variables can be scoped to a specific element or globally defined. If defined in a specific
+			element, they apply
+			only within that element and its children.
 		</li>
 	</ul>
+	<h1>Example:</h1>
+	<img src="images/anchor_4.png" alt="itCodeGirl Example code" class="CSS-Custom-Properties" />
+	<h1>Explanation:</h1>
+	<ul>
+		<li>`:root`: Custom properties like `--main-bg-color`, `--main-text-color`, etc., are declared inside the
+			`:root` to make them
+			globally accessible.</li>
+		<li>`var()`: The `var()` function is used to reference the custom property. For example, the body background
+			color is set to
+			`var(--main-bg-color)`.</li>
 
-	<div class="container">
+		<h1>Benefits:</h1>
+		<li>Maintainability: You only need to change the value in one place to update it everywhere it's used.</li>
+		<li>Reusability: Values such as colors, sizes, or spacing can be reused across different elements.</li>
+		<li>Theming: Custom properties can be easily adapted to create themes by simply changing the values of the
+			variables.</li>
+		<li>JavaScript Compatibility: CSS custom properties can be dynamically updated via JavaScript, adding further
+			flexibility.</li>
+	</ul>
+	<h1>Dynamic Updates:</h1>
+	<p>Custom properties can be updated dynamically using JavaScript, allowing for changes based on user interactions
+		or other
+		events. For example:</p>
+	<p>
+		This updates the `--main-bg-color` to a new color dynamically without modifying the CSS file.
+	</p>
+	<br />
+	<img src="images/anchor_5.png" alt="itCodeGirl Example code" class="CSS-Custom-Properties" />
 
-		<div>
-			<h1>My Skills</h1>
-			<p>HTML</p>
-			<div class="container">
-				<div class="skills html">90%</div>
-			</div>
-			<p>CSS</p>
-			<div class="container">
-				<div class="skills css">80%</div>
-			</div>
-			<p>JavaScript</p>
-			<div class="container">
-				<div class="skills js">65%</div>
-			</div>
-			<p>PHP</p>
-			<div class="container">
-				<div class="skills php">60%</div>
-			</div>
-			<p>Python</p>
-			<div class="container">
-				<div class="skills python">50%</div>
+	<h1>Conclusion:</h1>
+	<p>CSS custom properties (variables) help create more maintainable, flexible, and efficient styles by centralizing
+		common
+		values, allowing for easier global updates, theming, and dynamic changes.</p>
+
+	<div style=" align-items: center;" id="container-whole">
+		<div class="container-outline-skills" id="container-outline-skills">
+			<div>
+				<h1>My Skills</h1>
+				<p>HTML</p>
+				<div class="container">
+					<div class="skills html">90%</div>
+				</div>
+				<p>CSS</p>
+				<div class="container">
+					<div class="skills css">80%</div>
+				</div>
+				<p>JavaScript</p>
+				<div class="container">
+					<div class="skills js">65%</div>
+				</div>
+				<p>PHP</p>
+				<div class="container">
+					<div class="skills php">60%</div>
+				</div>
+				<p>Python</p>
+				<div class="container">
+					<div class="skills python">50%</div>
+				</div>
 			</div>
 		</div>
 	</div>
+	</H>
 </body>
 
 </html>
