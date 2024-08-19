@@ -1,0 +1,149 @@
+:root {
+	--html-skill-color: #e34c26;
+	--css-skill-color: #264de4;
+	--js-skill-color: #f0db4f;
+	--php-skill-color: #777bb3;
+	--python-skill-color: #306998;
+}
+
+body {
+	font-family: sofia, sans-serif;
+	background-color: rgb(130, 129, 131);
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+.logo {
+	display: block;
+	margin: 10px auto;
+	width: 20%;
+}
+
+#container-outline-skills {
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	width: 50%;
+	/* Make the width responsive */
+	max-width: px;
+	/* Set a maximum width */
+	margin: 0 auto;
+	/* Center the container */
+	padding: 10px;
+	/* Add some padding */
+}
+
+h1 {
+	text-align: center;
+	font-weight: 900;
+	margin: 0;
+	padding: 10px;
+	font-size: 50px;
+	line-height: 48px;
+}
+
+h2 {
+	text-align: center;
+	font-weight: 900;
+	margin: 0;
+	padding: 10px;
+	font-size: 40px;
+	line-height: 40px;
+}
+
+ul {
+	text-align: left;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+p {
+	text-align: left;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 35px;
+}
+
+/* Skill bars */
+.container {
+	justify-content: normal;
+	align-items: left;
+	width: 40%;
+	background-color: #ddd;
+	margin: 50px;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.skills {
+	text-align: right;
+	padding: 10px;
+	color: white;
+	border-radius: 5px;
+	font-weight: bold;
+	width: 0;
+	animation: growSkill 2s ease-out forwards;
+}
+
+@keyframes growSkill {
+	from {
+		width: 0;
+	}
+
+	to {
+		width: 100%;
+	}
+}
+
+/* Specific skill bar colors and widths */
+.skills.html {
+	background-color: var(--html-skill-color);
+	width: 90%;
+	animation-delay: 0.5s;
+}
+
+.skills.css {
+	background-color: var(--css-skill-color);
+	width: 80%;
+	animation-delay: 0.7s;
+}
+
+.skills.js {
+	background-color: var(--js-skill-color);
+	width: 65%;
+	animation-delay: 0.9s;
+}
+
+.skills.php {
+	background-color: var(--php-skill-color);
+	width: 60%;
+	animation-delay: 1.1s;
+}
+
+.skills.python {
+	background-color: var(--python-skill-color);
+	width: 50%;
+	animation-delay: 1.3s;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+	#container-outline-skills {
+		width: 90%;
+		/* Make it wider on smaller screens */
+		max-width: 100%;
+		/* Allow full width on very small screens */
+	}
+
+	h1 {
+		font-size: 40px;
+		line-height: 38px;
+	}
+
+	p {
+		font-size: 25px;
+		line-height: 30px;
+	}
+}
